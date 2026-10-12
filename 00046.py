@@ -1,7 +1,6 @@
 import time
 import math
 from functions import prime_list_seive
-from functions import is_prime
 
 # prime_list_seive(n) builds a list of all primes up to n
 
