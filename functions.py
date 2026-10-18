@@ -8,8 +8,10 @@
 # gen_pandigital -> generates a list of possible pandigitals.
 # get_amicables -> get amicable numbers.
 # is_abundant -> determines if a number is abundant. 
+# is_lychrel -> determines if a number is a lychrel number (adding it to the reverse of it NEVER generates a palindrome). Not reproduced here due to interwoveness with main and others, see 55 solution.
 # is_palindrome -> determines if a number is a palindrome.
 # is_prime -> Checks if a value is prime, returns T/F. Best for single prime checks.
+# longL -> generates a list of len(n) of "cat". Could easily be modified to generate T/F or something else. 
 # power_generator -> Build a set of all x**p where n is the ceiling. Works with power_sort
 # power_sort -> build a dict where the keys are the sorted cubes and the values are the original x**p
 # prefix_sums -> 
@@ -177,6 +179,15 @@ def is_abundant(v: int):
     else:
         return False
 ##########################################
+def is_lychrel():
+    # From problem 55
+    # Need the master list which comes from making a long list of "cat" that get turned to T/F
+    # Due to level of interwovenness into problem 55, not going to reproduce the whole thing here. 
+    # If needed go to 55 solution and pull from there. 
+    ...
+
+##########################################
+
 def is_palindrome(n):
     # From problem 36.
     # Pretty straight fwd, reverse the value and see if it is same as original value. 
@@ -209,6 +220,14 @@ def is_prime(n):
     return True
 
 # print(is_prime(91))
+####################################
+# Build a list (len(10000) that is all "cat". 
+# used in problem 55
+def longL(n):
+    L = ["cat"] * n
+    return L
+
+# print(longL(5))
 ####################################
 # Build a set of all x**p where n is the ceiling
 # 62
