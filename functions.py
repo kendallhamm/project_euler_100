@@ -221,7 +221,7 @@ def is_prime(n):
 
 # print(is_prime(91))
 ####################################
-# Build a list (len(10000) that is all "cat". 
+# Build a list (len(n)) that is all "cat". 
 # used in problem 55
 def longL(n):
     L = ["cat"] * n
